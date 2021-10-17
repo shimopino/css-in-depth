@@ -21,7 +21,10 @@ npm run storybook
 あとは、TypeScript 環境でも CSS Module と SASS を利用することができるように、パッケージを追加する。
 
 ```bash
+# https://github.com/sass/sass
 npm install --save-dev sass
+
+# https://github.com/mrmckeb/typescript-plugin-css-modules
 npm install --save-dev typescript-plugin-css-modules
 ```
 
