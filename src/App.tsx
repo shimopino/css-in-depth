@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import styles from './App.module.scss'
+import { useState } from 'react';
+import logo from './logo.svg';
+import styles from './App.module.scss';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className={styles.App}>
@@ -39,7 +39,7 @@ function App() {
         </p>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

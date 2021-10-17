@@ -81,3 +81,20 @@ src/stories
   ```
 
 ![](assets/HelloComponent.png)
+
+静的解析ツールの設定を追加する。
+
+```bash
+npm install --save-dev eslint
+
+npx eslint --init
+# ❯ To check syntax and find problems
+# ❯ JavaScript modules (import/export)
+# ❯ React
+# ? Does your project use TypeScript? › No / Yes
+# ✔ Browser
+# ❯ JavaScript
+# ? Would you like to install them now with npm? › No / Yes
+
+npm install --save-dev prettier eslint-config-prettier
+```
