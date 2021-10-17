@@ -79,3 +79,5 @@ src/stories
   export const Sample = Template.bind({});
   Sample.args = {};
   ```
+
+![](assets/HelloComponent.png)
