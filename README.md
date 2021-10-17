@@ -1,5 +1,7 @@
 # CSS in Depth
 
+https://github.com/CSSInDepth/css-in-depth/tree/master/ch01
+
 ## environment setup
 
 まずはプロジェクトの初期設定を実施する。
@@ -40,7 +42,7 @@ src/stories
 - `Hello.tsx`
 
   ```ts
-  import classes from "./Hello.module.scss";
+  import classes from './Hello.module.scss';
 
   export const Hello = () => {
     return (
@@ -62,13 +64,13 @@ src/stories
 - `Hello.stories.tsx`
 
   ```tsx
-  import React from "react";
-  import { ComponentMeta, ComponentStory } from "@storybook/react";
+  import React from 'react';
+  import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-  import { Hello } from "./Hello";
+  import { Hello } from './Hello';
 
   export default {
-    title: "Example/Hello",
+    title: 'Example/Hello',
     component: Hello,
   } as ComponentMeta<typeof Hello>;
 
