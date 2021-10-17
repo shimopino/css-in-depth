@@ -100,3 +100,10 @@ npx eslint --init
 
 npm install --save-dev prettier eslint-config-prettier
 ```
+
+各ページごとに CSS の実装を追加していく。
+
+```bash
+npm install react-router-dom
+npm install --save-dev @types/react-router-dom
+```
