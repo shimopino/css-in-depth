@@ -1,0 +1,15 @@
+html body header h1 {
+  color: blue;
+}
+
+body header.page-header h1 {
+  color: orange;
+}
+
+.page-header .title {
+  color: green;
+}
+
+#page-title {
+  color: red;
+}
