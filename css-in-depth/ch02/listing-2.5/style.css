@@ -1,0 +1,8 @@
+body {
+  font-size: 16px;
+}
+
+/* 1.2em = 16px * 1.2 = 19.2px */
+.slogan {
+  font-size: 1.2em;
+}
