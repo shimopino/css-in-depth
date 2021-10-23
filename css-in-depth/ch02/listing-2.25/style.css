@@ -1,0 +1,9 @@
+:root {
+  --main-font: Helvetica, Arial, sans-serif;
+  --brand-color: #369;
+}
+
+p {
+  font-family: var(--main-font);
+  color: var(--brand-color);
+}
