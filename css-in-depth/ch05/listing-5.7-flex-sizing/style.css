@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  background-color: #eee;
+}
+
+.flex-item {
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  background-color: #ccc;
+}
+
+/* flex-basis */
+.basis-item1 {
+  flex-basis: 20%;
+}
+
+.basis-item2 {
+  flex-basis: 20%;
+}
+
+.basis-item3 {
+  flex-basis: 20%;
+}
+
+/* flex-grow */
+.grow-item1 {
+  flex-grow: 0;
+}
+
+.grow-item2 {
+  flex-grow: 1;
+}
+
+.grow-item3 {
+  flex-grow: 1;
+}
+
+/* flex-basis */
+.basis-big-item1 {
+  flex-basis: 40%;
+}
+
+.basis-big-item2 {
+  flex-basis: 40%;
+}
+
+.basis-big-item3 {
+  flex-basis: 40%;
+}
+
+/* flex-basis */
+.basis-big-item1 {
+  flex-basis: 40%;
+}
+
+.basis-big-item2 {
+  flex-basis: 40%;
+}
+
+.basis-big-item3 {
+  flex-basis: 40%;
+}
+
+/* flex-shrink */
+.shrink-item1 {
+  flex-shrink: 0;
+}
+
+.shrink-item2 {
+  flex-shrink: 1;
+}
+
+.shrink-item3 {
+  flex-shrink: 1;
+}
+
+/* flex-basis */
+.basis-px-item1 {
+  flex: 0 0 200px;
+}
+
+.basis-px-item2 {
+  flex: 1;
+}
+
+.basis-px-item3 {
+  flex: 0 0 200px;
+}
