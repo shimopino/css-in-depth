@@ -1,0 +1,12 @@
+.inline {
+  display: inline;
+  padding: 0.5em;
+  background-color: darkgray;
+  border: 1px solid black;
+}
+
+.inline__shifted {
+  position: relative;
+  top: 1em;
+  left: 2em;
+}
