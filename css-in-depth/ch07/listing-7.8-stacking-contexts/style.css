@@ -1,0 +1,75 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* デフォルトでのスタッキング */
+.default-container div {
+  float: left;
+  padding: 2em;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.default-container .two {
+  margin-top: 1em;
+  margin-left: -1em;
+}
+
+.default-container .three {
+  margin-top: 2em;
+  margin-left: -1em;
+}
+
+/* relative を指定した場合のスタッキング */
+.relative-container div {
+  float: left;
+  padding: 2em;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.relative-container .one {
+  position: relative;
+}
+
+.relative-container .two {
+  position: relative;
+  margin-top: 1em;
+  margin-left: -1em;
+}
+
+.relative-container .three {
+  margin-top: 2em;
+  margin-left: -1em;
+}
+
+/* z-index を指定した場合のスタッキング */
+.z-index-container div {
+  float: left;
+  padding: 2em;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.z-index-container .one {
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-container .two {
+  position: relative;
+  z-index: 1;
+  margin-top: 1em;
+  margin-left: -1em;
+}
+
+.z-index-container .three {
+  margin-top: 2em;
+  margin-left: -1em;
+}
