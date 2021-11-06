@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 1em auto;
+}
+
+.border-top {
+  display: inline-block;
+  content: "";
+  border: 1em solid;
+  border-color: black transparent transparent transparent;
+}
+
+.border-right {
+  display: inline-block;
+  content: "";
+  border: 1em solid;
+  border-color: transparent black transparent transparent;
+}
+
+.border-bottom {
+  display: inline-block;
+  content: "";
+  border: 1em solid;
+  border-color: transparent transparent black transparent;
+}
+
+.border-left {
+  display: inline-block;
+  content: "";
+  border: 1em solid;
+  border-color: transparent transparent transparent black;
+}
