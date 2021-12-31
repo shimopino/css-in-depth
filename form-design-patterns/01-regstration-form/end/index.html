@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainContent">
+      <div class="pageContent">
+        <div
+          tabindex="-1"
+          role="group"
+          id="errorSummary"
+          class="errorSummary hidden"
+        ></div>
+
+        <h1 class="h1">Register</h1>
+        <div class="prose">
+          <p>
+            Already got an account? <a href="/examples/login-form">Log in</a>
+          </p>
+        </div>
+
+        <form novalidate>
+          <div class="field">
+            <label for="email">
+              <span class="field-label">Email address</span>
+            </label>
+            <input type="text" id="email" name="email" value="" />
+          </div>
+          <div class="field">
+            <label for="password">
+              <span class="field-label">Password</span>
+              <span class="field-hint"
+                >Must contain 8+ characters with at least 1 number</span
+              >
+            </label>
+            <div class="passwordRevealer">
+                <input type="password" id="password" name="password" value="" />
+                <button type="button">Show</button>
+            </div>
+          </div>
+          <input
+            type="submit"
+            class="primaryButton"
+            name="register"
+            value="Register"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var validator = new FormValidator(document.forms[0]);
+      validator.addValidator("email", [
+        {
+          method: function (field) {
+            return field.value.length > 0;
+          },
+          message: "Enter your email address",
+        },
+        {
+          method: function (field) {
+            return field.value.indexOf("@") > -1;
+          },
+          message: "You need to enter the ‘at’ symbol in the email address",
+        },
+      ]);
+      validator.addValidator("password", [
+        {
+          method: function (field) {
+            return field.value.length > 0;
+          },
+          message: "Enter your password",
+        },
+        {
+          method: function (field) {
+            return field.value.length > 8;
+          },
+          message: "Your password must contain at least 8 characters",
+        },
+        {
+          method: function (field) {
+            return /\d/.test(field.value);
+          },
+          message: "Your password must contain at least one number",
+        },
+      ]);
+
+      new PasswordRevealer(document.getElementById("password"));
+    </script>
+  </body>
+</html>
